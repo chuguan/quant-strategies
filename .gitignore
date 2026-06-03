@@ -1,0 +1,41 @@
+# 策略代码 — 只同步源码
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+*.pickle
+*.so
+
+# 数据文件
+*.pkl
+*.db
+*.sqlite
+big_cache*
+.features_30d*
+tdx_cache*
+five_board*
+神龙_xgb*
+*_xgb*.pkl
+
+# 环境配置
+.env
+venv/
+node_modules/
+
+# 日志
+*.log
+/logs/
+email_archive/
+hermes_workspace/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 测试临时文件
+/tmp/
+temp/

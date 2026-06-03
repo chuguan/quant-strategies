@@ -1,0 +1,355 @@
+{
+  "real_up": {
+    "params": {
+      "use_p": 1,
+      "p_w": 5,
+      "use_cl": 0,
+      "cl_w": 0.02,
+      "use_vr": 0,
+      "use_macd": 1,
+      "macd_w": 2,
+      "dif_bonus": 15,
+      "dif_thresh": 0.5,
+      "use_a5": 1,
+      "a5_b": 2,
+      "use_wr": 1,
+      "wr_lo": 20,
+      "wr_lo_b": 2,
+      "use_kdj": 1,
+      "j_golden_b": 0,
+      "j_hi": 60,
+      "j_zone_b": 5,
+      "use_pos": 0,
+      "pos_hi_pen": -5,
+      "cl_zones": [],
+      "vr_zones": []
+    },
+    "levels": [
+      {
+        "name": "L0",
+        "p_min": -1,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 2.5,
+        "hs_min": 5,
+        "hs_max": 15,
+        "sz_max": 200,
+        "cl_min": 60,
+        "cl_max": 90
+      },
+      {
+        "name": "L1",
+        "p_min": 2,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 2.5,
+        "hs_min": 3,
+        "hs_max": 20,
+        "sz_max": 200,
+        "cl_min": 50,
+        "cl_max": 95
+      },
+      {
+        "name": "L2",
+        "p_min": 1,
+        "p_max": 7,
+        "vr_min": 0.5,
+        "vr_max": 3.0,
+        "hs_min": 2,
+        "hs_max": 25,
+        "sz_max": 300,
+        "cl_min": 40,
+        "cl_max": 95
+      }
+    ],
+    "rate": 80.0
+  },
+  "flat": {
+    "params": {
+      "use_p": 1,
+      "p_w": 0.5,
+      "use_cl": 1,
+      "cl_w": 0.1,
+      "use_vr": 1,
+      "use_macd": 1,
+      "macd_w": 1,
+      "dif_bonus": 20,
+      "dif_thresh": 1.5,
+      "use_a5": 1,
+      "a5_b": 8,
+      "use_wr": 1,
+      "wr_lo": 15,
+      "wr_lo_b": 8,
+      "use_kdj": 1,
+      "j_golden_b": 8,
+      "use_kdj_g": 1,
+      "kdj_g_b": 5,
+      "use_pos": 0,
+      "pos_hi_pen": -10,
+      "cl_zones": [
+        [
+          50,
+          80,
+          5
+        ]
+      ],
+      "vr_zones": [
+        [
+          0.8,
+          2.0,
+          10
+        ]
+      ]
+    },
+    "levels": [
+      {
+        "name": "L0",
+        "p_min": 0,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 2.5,
+        "hs_min": 3,
+        "hs_max": 20,
+        "sz_max": 200,
+        "cl_min": 40,
+        "cl_max": 95
+      },
+      {
+        "name": "L1",
+        "p_min": -1,
+        "p_max": 7,
+        "vr_min": 0.5,
+        "vr_max": 3.0,
+        "hs_min": 2,
+        "hs_max": 25,
+        "sz_max": 200,
+        "cl_min": 30,
+        "cl_max": 95
+      },
+      {
+        "name": "L2",
+        "p_min": -2,
+        "p_max": 7,
+        "vr_min": 0.4,
+        "vr_max": 3.5,
+        "hs_min": 1,
+        "hs_max": 30,
+        "sz_max": 300,
+        "cl_min": 20,
+        "cl_max": 98
+      },
+      {
+        "name": "L3",
+        "p_min": -3,
+        "p_max": 7,
+        "vr_min": 0.3,
+        "vr_max": 4.0,
+        "hs_min": 0.5,
+        "hs_max": 35,
+        "sz_max": 400,
+        "cl_min": 10,
+        "cl_max": 99
+      },
+      {
+        "name": "L4",
+        "p_min": -5,
+        "p_max": 7,
+        "vr_min": 0.2,
+        "vr_max": 5.0,
+        "hs_min": 0.3,
+        "hs_max": 40,
+        "sz_max": 500,
+        "cl_min": 0,
+        "cl_max": 100
+      }
+    ],
+    "rate": 73.3
+  },
+  "down": {
+    "params": {
+      "use_p": 1,
+      "p_w": 0.5,
+      "use_cl": 1,
+      "cl_w": 0.2,
+      "use_vr": 1,
+      "use_macd": 0,
+      "macd_w": 2,
+      "dif_bonus": 5,
+      "use_a5": 0,
+      "a5_b": 20,
+      "use_wr": 1,
+      "wr_lo_b": 20,
+      "use_kdj": 0,
+      "j_golden_b": 5,
+      "j_zone_b": 5,
+      "use_pos": 1,
+      "pos_hi_pen": -20,
+      "cl_zones": [],
+      "vr_zones": [
+        [
+          1.0,
+          1.5,
+          1
+        ]
+      ]
+    },
+    "levels": [
+      {
+        "name": "L1",
+        "p_min": 2,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 1.5,
+        "hs_min": 5,
+        "hs_max": 20,
+        "sz_max": 150,
+        "cl_min": 40,
+        "cl_max": 90,
+        "a5_req": 1,
+        "kdj_g_req": 1
+      },
+      {
+        "name": "L2",
+        "p_min": 2,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 1.5,
+        "hs_min": 5,
+        "hs_max": 20,
+        "sz_max": 150,
+        "cl_min": 40,
+        "cl_max": 90,
+        "a5_req": 1
+      },
+      {
+        "name": "L3",
+        "p_min": 2,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 2.0,
+        "hs_min": 3,
+        "hs_max": 25,
+        "sz_max": 200,
+        "cl_min": 30,
+        "cl_max": 95
+      },
+      {
+        "name": "L4",
+        "p_min": 0,
+        "p_max": 7,
+        "vr_min": 0.5,
+        "vr_max": 2.5,
+        "hs_min": 2,
+        "hs_max": 30,
+        "sz_max": 300,
+        "cl_min": 20,
+        "cl_max": 98
+      },
+      {
+        "name": "L5",
+        "p_min": -10,
+        "p_max": 7,
+        "vr_min": 0.1,
+        "vr_max": 10,
+        "hs_min": 0.1,
+        "hs_max": 100,
+        "sz_max": 10000,
+        "cl_min": 0,
+        "cl_max": 100
+      }
+    ],
+    "rate": 80.0
+  },
+  "fake_up": {
+    "params": {
+      "use_p": 1,
+      "p_w": 1,
+      "use_cl": 1,
+      "cl_w": 0.05,
+      "use_vr": 1,
+      "use_macd": 1,
+      "macd_w": 1,
+      "dif_bonus": 2,
+      "use_a5": 0,
+      "a5_b": 10,
+      "use_wr": 1,
+      "wr_lo_b": 0,
+      "use_kdj": 1,
+      "j_golden_b": 5,
+      "j_zone_b": 5,
+      "use_pos": 1,
+      "pos_hi_pen": -20,
+      "cl_zones": [],
+      "vr_zones": [
+        [
+          1.0,
+          1.5,
+          10
+        ]
+      ]
+    },
+    "levels": [
+      {
+        "name": "L1",
+        "p_min": 4,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 2.0,
+        "hs_min": 5,
+        "hs_max": 20,
+        "sz_max": 200,
+        "cl_min": 30,
+        "cl_max": 90
+      },
+      {
+        "name": "L2",
+        "p_min": 3,
+        "p_max": 7,
+        "vr_min": 0.6,
+        "vr_max": 2.5,
+        "hs_min": 5,
+        "hs_max": 20,
+        "sz_max": 200,
+        "cl_min": 30,
+        "cl_max": 95
+      },
+      {
+        "name": "L3",
+        "p_min": 2,
+        "p_max": 7,
+        "vr_min": 0.5,
+        "vr_max": 2.5,
+        "hs_min": 3,
+        "hs_max": 25,
+        "sz_max": 300,
+        "cl_min": 20,
+        "cl_max": 95
+      },
+      {
+        "name": "L4",
+        "p_min": 0,
+        "p_max": 7,
+        "vr_min": 0.3,
+        "vr_max": 5.0,
+        "hs_min": 1,
+        "hs_max": 40,
+        "sz_max": 500,
+        "cl_min": 5,
+        "cl_max": 98
+      },
+      {
+        "name": "L5",
+        "p_min": -10,
+        "p_max": 7,
+        "vr_min": 0.1,
+        "vr_max": 10,
+        "hs_min": 0.1,
+        "hs_max": 100,
+        "sz_max": 10000,
+        "cl_min": 0,
+        "cl_max": 100
+      }
+    ],
+    "rate": 75.0
+  }
+}

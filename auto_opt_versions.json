@@ -1,0 +1,233 @@
+[
+  {
+    "ver": "v1",
+    "params": {
+      "p_min": 5.0,
+      "p_max": 8.0,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 150,
+      "j_max": 100,
+      "cl_min": 0,
+      "cl_max": 90
+    },
+    "w25": 66.2,
+    "cp": 88.5,
+    "n": 77,
+    "sort": "p",
+    "note": "精细搜索最佳",
+    "time": "14:30"
+  },
+  {
+    "ver": "v2",
+    "params": {
+      "p_min": 5.5,
+      "p_max": 7.0,
+      "vr_min": 1.2,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 60,
+      "j_max": 80,
+      "cl_min": 0,
+      "cl_max": 90
+    },
+    "w25": 75.0,
+    "cp": 23.0,
+    "n": 20,
+    "sort": "p",
+    "note": "最高达标率方案#1",
+    "time": "14:42"
+  },
+  {
+    "ver": "v3",
+    "params": {
+      "p_min": 5.0,
+      "p_max": 8.0,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 150,
+      "j_max": 100,
+      "cl_min": 0,
+      "cl_max": 90
+    },
+    "w25": 66.2,
+    "cp": 88.5,
+    "n": 77,
+    "sort": "p",
+    "note": "排序优化:p",
+    "time": "14:42"
+  },
+  {
+    "ver": "v4",
+    "params": {
+      "p_min": 5.0,
+      "p_max": 8.0,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 150,
+      "j_max": 100,
+      "cl_min": 0,
+      "cl_max": 90
+    },
+    "w25": 66.2,
+    "cp": 88.5,
+    "n": 77,
+    "sort": "p",
+    "note": "CL优化0~90",
+    "time": "14:42"
+  },
+  {
+    "ver": "v5",
+    "params": {
+      "p_min": 5.0,
+      "p_max": 8.0,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 150,
+      "j_max": 100,
+      "cl_min": 60,
+      "cl_max": 90
+    },
+    "w25": 66.2,
+    "cp": 88.5,
+    "n": 77,
+    "sort": "p",
+    "note": "CL优化60~90",
+    "time": "14:42"
+  },
+  {
+    "ver": "v6",
+    "params": {
+      "p_min": 6,
+      "p_max": 8,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 200,
+      "j_max": 100,
+      "cl_min": 0,
+      "cl_max": 90
+    },
+    "w25": 68.2,
+    "cp": 75.9,
+    "n": 66,
+    "sort": "p",
+    "note": "极限优选68%",
+    "time": "14:43"
+  },
+  {
+    "ver": "v7",
+    "params": {
+      "p_min": 6,
+      "p_max": 8,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 200,
+      "j_max": 100,
+      "cl_min": 60,
+      "cl_max": 90
+    },
+    "w25": 68.2,
+    "cp": 75.9,
+    "n": 66,
+    "sort": "p",
+    "note": "极限优选68%",
+    "time": "14:43"
+  },
+  {
+    "ver": "v8",
+    "params": {
+      "p_min": 6,
+      "p_max": 7.5,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 100,
+      "j_max": 100,
+      "cl_min": 0,
+      "cl_max": 100
+    },
+    "w25": 69.2,
+    "cp": 59.8,
+    "n": 52,
+    "sort": "p",
+    "note": "极限优选69%",
+    "time": "14:43"
+  },
+  {
+    "ver": "v9",
+    "params": {
+      "p_min": 6,
+      "p_max": 7.5,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 100,
+      "j_max": 100,
+      "cl_min": 60,
+      "cl_max": 100
+    },
+    "w25": 69.2,
+    "cp": 59.8,
+    "n": 52,
+    "sort": "p",
+    "note": "极限优选69%",
+    "time": "14:43"
+  },
+  {
+    "ver": "v10",
+    "params": {
+      "p_min": 6,
+      "p_max": 7.5,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 80,
+      "j_max": 100,
+      "cl_min": 0,
+      "cl_max": 90
+    },
+    "w25": 69.0,
+    "cp": 48.3,
+    "n": 42,
+    "sort": "p",
+    "note": "极限优选69%",
+    "time": "14:43"
+  },
+  {
+    "ver": "v11",
+    "params": {
+      "p_min": 6,
+      "p_max": 7.5,
+      "vr_min": 1.0,
+      "vr_max": 1.5,
+      "hsl_min": 5,
+      "hsl_max": 12,
+      "sz_max": 80,
+      "j_max": 100,
+      "cl_min": 60,
+      "cl_max": 90
+    },
+    "w25": 69.0,
+    "cp": 48.3,
+    "n": 42,
+    "sort": "p",
+    "note": "极限优选69%",
+    "time": "14:43"
+  }
+]

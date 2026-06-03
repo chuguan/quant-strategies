@@ -1,0 +1,31 @@
+{
+  "strategy": "小猪策略 CG-06",
+  "date": "2026-05-24 14:02",
+  "hard_filters": [
+    "价<80",
+    "均线多头 MA5>MA10>MA20>MA60",
+    "MACD零轴上(DIF>0,DIF>DEA)",
+    "ATR>3%",
+    "站上MA60"
+  ],
+  "scoring": "v1-基础",
+  "backtest_2026": {
+    "total_days": 90,
+    "pick_days": 90,
+    "pick_rate": "100.0%",
+    "avg_candidates": 93.0,
+    "d1_25pct_rate": "64.4%",
+    "d1_25pct_hits": 58,
+    "d1_25pct_total": 90,
+    "max5_10pct_rate": "38.9%",
+    "avg_max5": 12.2
+  },
+  "validate_2025": {
+    "total_days": 243,
+    "pick_days": 131,
+    "pick_rate": "53.9%",
+    "d1_25pct_rate": "64.1%",
+    "d1_25pct_hits": 84,
+    "max5_10pct_rate": "36.6%"
+  }
+}

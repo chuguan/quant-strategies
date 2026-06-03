@@ -1,0 +1,12 @@
+{
+  "stocks": [
+    {"code": "000725", "market": "sz", "name": "京东方A", "sector": "面板"},
+    {"code": "600584", "market": "sh", "name": "长电科技", "sector": "芯片半导体"},
+    {"code": "002475", "market": "sz", "name": "立讯精密", "sector": "消费电子"},
+    {"code": "000938", "market": "sz", "name": "紫光股份", "sector": "AI算力"},
+    {"code": "601985", "market": "sh", "name": "中国核电", "sector": "电力"}
+  ],
+  "updated_at": "2026-05-22",
+  "market_trend": "创业板领涨，成长风格占优",
+  "hot_sectors": ["芯片半导体", "消费电子", "面板", "AI算力"]
+}

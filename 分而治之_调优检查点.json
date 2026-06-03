@@ -1,0 +1,22 @@
+{
+  "real_up": {
+    "rate": 66.7,
+    "time": "2026-05-30T11:54:37.300469",
+    "achieved": false
+  },
+  "fake_up": {
+    "rate": 41.7,
+    "time": "2026-05-30T11:55:38.791584",
+    "achieved": false
+  },
+  "down": {
+    "rate": 50.0,
+    "time": "2026-05-30T11:52:01.423587",
+    "achieved": false
+  },
+  "flat": {
+    "rate": 56.7,
+    "time": "2026-05-30T11:53:15.821855",
+    "achieved": false
+  }
+}
