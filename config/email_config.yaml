@@ -1,0 +1,48 @@
+# ============================================
+# 📧 邮件配置 — 统一控制
+# 修改此文件后所有脚本自动生效
+# 后续改动仅需修改本文件
+# ============================================
+env: production
+
+# A组 + B组 全部收件人（统一发送）
+email_a:
+  sender: xiaozhufenfen88@163.com
+  smtp_host: smtp.163.com
+  smtp_port: 465
+  password: YZmfTbTsvXWbSnFy
+  recipients:
+    - 1254628314@qq.com
+    - 314913203@qq.com
+    - 2603672569@qq.com
+    - 2318162429@qq.com
+  night_block:
+    start_hour: 0
+    end_hour: 6
+
+# B组（为兼容旧脚本保留，收件人与A组一致）
+email_b:
+  sender: xiaozhufenfen88@163.com
+  smtp_host: smtp.163.com
+  smtp_port: 465
+  password: YZmfTbTsvXWbSnFy
+  recipients:
+    - 1254628314@qq.com
+    - 314913203@qq.com
+    - 2603672569@qq.com
+    - 2318162429@qq.com
+  night_block:
+    start_hour: 0
+    end_hour: 6
+
+# 开发测试环境 — 仅发一人
+dev:
+  sender: xiaozhufenfen88@163.com
+  smtp_host: smtp.163.com
+  smtp_port: 465
+  password: YZmfTbTsvXWbSnFy
+  recipients:
+    - 1254628314@qq.com
+  night_block:
+    start_hour: 0
+    end_hour: 0

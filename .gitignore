@@ -1,41 +1,89 @@
-# 策略代码 — 只同步源码
+# =====================
+# 开发环境(master) = 生产拷贝作为基线
+# 旧研究脚本保留为文件存储（不跟踪）
+# =====================
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pkl
-*.pickle
-*.so
+# 只跟踪生产目录结构
+# 根级别研究脚本不跟踪
+/*.py
+/*.sh
+/*.json
+/*.html
+/*.yml
+/*.yaml
+/*.md
+/*.txt
+/*.zip
+/*.js
+/*.png
 
-# 数据文件
+# 旧版本目录不跟踪
+/V10/
+/V11/
+/V11_zip_run/
+/release/
+/archive/
+/backup/
+/dev/
+/dashboard/
+/quant/
+/hermes-agent/
+/node_modules/
+/定海神针/
+/定海神针_20260529/
+/email_archive/
+/__pycache__/
+
+# 大数据/编译文件不跟踪
 *.pkl
 *.db
-*.sqlite
-big_cache*
-.features_30d*
-tdx_cache*
-five_board*
-神龙_xgb*
-*_xgb*.pkl
+*.db-shm
+*.db-wal
+*.db.bak
+*_cache.json
+*_cache.pkl
+*cache*.pkl
+*_cache*.json
+__pycache__/
+*.pyc
+*.bak
+*.bak_*
 
-# 环境配置
-.env
-venv/
-node_modules/
+# --- 生产目录结构 -- 跟踪以下目录内所有源码 ---
+!config/
+!config/*
+!data/
+!data/*
+!infra/
+!infra/*
+!lib/
+!lib/*
+!monitor/
+!monitor/*
+!report/
+!report/*
+!scripts/
+!scripts/*
+!strategies/
+!strategies/*
 
-# 日志
-*.log
-/logs/
-email_archive/
-hermes_workspace/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# 测试临时文件
-/tmp/
-temp/
+# --- 但排除这些目录内的衍生文件 ---
+config/*.pyc
+data/*.pkl
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.bak
+infra/*.pyc
+infra/*__pycache__*
+lib/*.pyc
+lib/*__pycache__*
+monitor/*.pyc
+monitor/*__pycache__*
+report/*.pyc
+report/*__pycache__*
+strategies/*.pyc
+strategies/*.bak
+strategies/*.bak_*
+strategies/*/__pycache__/*
+strategies/*/*/__pycache__/*
