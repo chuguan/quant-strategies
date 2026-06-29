@@ -90,9 +90,11 @@ def log_selection_to_db(version, date, market_type, used_level, pool_size, top10
     
     import json
     top10_json = json.dumps([
-        {'sc':sc, 'name':s.get('name',''), 'code':code,
-         'price':s.get('price',0), 'p':s.get('p',0)}
-        for sc, s, ind, code in top10[:10]
+        {'sc': it[0], 'name': (it[1].get('name','') if isinstance(it[1], dict) else ''),
+         'code': it[3] if len(it) >= 4 else '',
+         'price': (it[1].get('price',0) if isinstance(it[1], dict) else 0),
+         'p': (it[1].get('p',0) if isinstance(it[1], dict) else 0)}
+        for it in top10[:10] if len(it) >= 2
     ], ensure_ascii=False, default=str)
     
     conn.execute('''
@@ -109,6 +111,35 @@ def log_selection_to_db(version, date, market_type, used_level, pool_size, top10
                 ?)
     ''', (version, date, market_type, used_level, pool_size,
           *c_vals, *s_vals, *t_vals, top10_json))
+    
+    # 同时写入 selection_candidates（供择优读取）
+    conn.execute('''CREATE TABLE IF NOT EXISTS selection_candidates (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        date TEXT, run_time TEXT, version TEXT, rank INTEGER,
+        code TEXT, name TEXT, price REAL, pct REAL, score REAL,
+        cl REAL, vr REAL, hsl REAL, dif REAL, wr REAL
+    )''')
+    run_t = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    for i, item in enumerate(top10[:10]):
+        if len(item) >= 4:
+            sc, s, ind, code = item[0], item[1], item[2], item[3]
+        elif isinstance(item, dict):
+            sc = item.get('sc', 0); s = item; code = item.get('code', ''); ind = {}
+        else:
+            continue
+        nm = s.get('name','') if isinstance(s, dict) else ''
+        pr = s.get('price',0) if isinstance(s, dict) else 0
+        pc = s.get('p',0) if isinstance(s, dict) else 0
+        cl_v = ind.get('cl',50) if ind else (s.get('cl',50) if isinstance(s, dict) else 50)
+        vr_v = ind.get('vol_ratio',1) if ind else (s.get('vol_ratio',1) if isinstance(s, dict) else 1)
+        hsl_v = s.get('hsl',0) if isinstance(s, dict) else 0
+        dif_v = ind.get('dif',0) if ind else 0
+        wr_v = ind.get('wr',50) if ind else 50
+        conn.execute('''INSERT OR IGNORE INTO selection_candidates
+            (date, run_time, version, rank, code, name, price, pct, score, cl, vr, hsl, dif, wr)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',
+            (date, run_t, version, i+1, code, nm, pr, pc, round(sc,1),
+             cl_v, vr_v, hsl_v, dif_v, wr_v))
     
     conn.commit()
     conn.close()

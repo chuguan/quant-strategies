@@ -4,7 +4,7 @@ import sqlite3
 import os
 from datetime import datetime, timedelta
 
-SCRIPTS_DIR = os.path.expanduser('~/AppData/Local/hermes/prod')
+SCRIPTS_DIR = os.path.expanduser('~/AppData/Local/hermes/scripts')
 DB_PATH = os.path.join(SCRIPTS_DIR, 'v13_quant.db')
 
 def ensure_daily_log_table():
@@ -98,7 +98,7 @@ def log_selection_to_db(version, date, market_type, used_level, pool_size, top10
 def save_realtime_to_datacache(date, stocks, indicators, source_tag='tencent:1450'):
     """把当天14:50实时数据写入data_cache，统一数据源"""
     import sqlite3, os
-    DB_PATH = os.path.join(os.path.expanduser('~/AppData/Local/hermes/prod'), 'data', 'v13_quant.db')
+    DB_PATH = os.path.join(os.path.expanduser('~/AppData/Local/hermes/scripts'), 'v13_quant.db')
     conn = sqlite3.connect(DB_PATH, timeout=30)
     
     rows = []
